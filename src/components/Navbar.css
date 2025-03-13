@@ -1,0 +1,23 @@
+/* header{
+    
+    border-radius: 8px;
+    
+    
+} */
+
+button{
+    background-color: #02874E;
+    border: 1px solid #02874E;
+    border-radius: 10px;
+}
+
+
+.side{
+    border-radius: 8px;
+    background-color: #02874E;
+}
+
+
+/* ul li{
+    color: #02874E ;
+} */

@@ -1,0 +1,43 @@
+<div>
+      <br /><br /><br /><br /><br />
+      <div className=' flex justify-center items-center min-h-screen p-4 '>
+            <div className=' w-full max-w-2xl border border-black p-6 rounded-lg shadow-lg bg-white '>
+              
+              <h4 className="text-4xl font-semibold text-center tracking-light underline underline-offset-8 decoration-2 decoration-solid decoration-green-800">
+                Upcoming Events
+              </h4>
+
+              <br /><br />
+
+              <div className="space-y-4">
+                  {currentEvents.map((event) => (
+                    <div key={event.id} className="p-4 border rounded-lg shadow">
+                      <h3 className="text-lg font-bold">{event.title}</h3>
+                      <p className="text-gray-600">{event.date} • {event.location}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Pagination Controls */}
+                <div className="flex justify-center mt-4 space-x-2 relative z-0">
+                  {[...Array(totalPages)].map((_, i) => (
+                    <button
+                      key={i}
+                      className={`px-6 py-3 min-w-[44px] min-h-[44px]  cursor-pointer touch-manipulation ${
+                        currentPage === i + 1 ? "bg-green-900 text-white" : "bg-green-500"
+                      }`}
+                      onClick={() => {
+                        console.log(`Page ${i + 1} clicked`);
+                        setCurrentPage(i + 1);
+                      }}
+                    >
+                      {i + 1}
+                    </button>
+                  ))}
+                </div>
+            
+            </div>
+
+        </div>
+      <Footer />
+    </div>

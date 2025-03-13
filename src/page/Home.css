@@ -1,0 +1,27 @@
+section{
+    background-image: url(swim2.jpeg);
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 1365px;
+    background-size: cover;
+}
+
+/* .box{
+    border: 1px solid black;
+    width: 90%;
+    
+    
+    justify-self: center;
+} */
+
+button{
+    background-color: #02874E;
+    border: 1px solid #02874E;
+    border-radius: 10px;
+}
+
+.events{
+    
+    border: 4px solid #02874E;
+    border-radius: 16px;
+}
