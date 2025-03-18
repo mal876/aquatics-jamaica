@@ -32,7 +32,7 @@ const eventsData = [
 const Home = () => {
   return (
    <div>
-     <section className='w-full'>
+     <section className='w-full' style={{ backgroundImage: 'url(swim2.jpeg)' }} >
          <br /><br /><br /> <br /><br /><br /> <br />
          <div className='  md:items-center md:text-left sm:max-xl-p-9'>
            <div className='box leading-normal p-4 '>
